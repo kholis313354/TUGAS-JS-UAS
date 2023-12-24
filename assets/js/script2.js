@@ -75,8 +75,8 @@ const maxSalahJawab = 3; // Jumlah maksimal tebakan yang salah
 var lanjut = () => {
   benarjawaban++;
   jawabBenar.innerHTML = "jawaban benar :" + benarjawaban;
-  if (benarjawaban === 1) {
-    // Jika jawaban benar sudah 3 kali, tampilkan tombol "Share"
+  if (benarjawaban === 4) {
+    // Jika jawaban benar sudah 4 kali, tampilkan tombol "Share"
     if (jawabanBenar.length === kataKata.length) {
       finishBtn.style.display = "inline-block";
       lanjutBtn.style.display = "none";
@@ -134,8 +134,8 @@ const gameOver = (isVictory) => {
     // Play win effect
     winSound.play();
       // Tampilkan tombol "Share" dan "Lanjut" jika jawaban benar sudah 3 kali
-      if (benarjawaban === 1) {
-        // Jika jawaban benar sudah 3 kali, tampilkan tombol "Share"
+      if (benarjawaban === 4) {
+        // Jika jawaban benar sudah 4 kali, tampilkan tombol "Share"
         if (jawabanBenar.length === kataKata.length) {
           finishBtn.style.display = "inline-block";
           lanjutBtn.style.display = "none";
