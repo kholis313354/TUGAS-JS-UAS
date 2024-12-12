@@ -10,6 +10,7 @@ body {
     background: url("../img/bg5.gif") top right no-repeat;
     background-size: cover;
     background-position: center;
+    color : #fff;
   }
   body::before {
     content: "";
